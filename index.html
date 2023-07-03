@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>OLGA Meme Generator</title>
+</head>
+<body>
+	<div class="container formContainer ">
+    	<div class="title">Create your MEME</div>
+    	<div class="content">
+      		<form action="" id="memeForm">
+        		<div class="meme-details">
+					<div class="input-box">
+						<label for="topText"> Top Text </label><br> 
+						<input type="text" id="topText" name="topText" value="" size="40" />
+					</div>
+					<div class="input-box">
+						<label for="bottomText"> Bottom Text</label><br>
+						<input type="text" id="bottomText" name="bottomText" value="" size="40" />
+					</div>
+					<div class="input-box">
+						<label for="imageUrl"> Url Image </label><br> 
+						<input type="text" id="imageUrl" name="imageUrl" value="" size="40" required />
+					</div>
+					<div class="input-box">
+						<label for="colorText"> Text Color </label><br>
+						<input type="color" id="colorText" value="#000000" />
+					</div>
+					<div class="button">
+						<input type="submit" value="Create">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="container">
+		<div id="memeRow" class="row">
+
+			<!-- example of the Box Meme
+			<div class="memeBox">
+				<input class="trash" type="image" src="images/garbage.jpg"  alt="delete"/>
+				<img class="imgMeme" src="https://www.altoadige.it/image/contentid/policy:1.426397:1501919901/image/image.jpg?f=3x2&w=627&$p$f$w=caf6c4a" height="333">
+				<div class="top" style="color: rgb(0, 0, 0);">TOP TEXT</div>
+				<div class="bottom" style="color: rgb(0, 0, 0);">BOTTOM TEXT</div>
+			</div> -->
+
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
