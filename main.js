@@ -27,7 +27,7 @@ let memesNumber = 1;
 const savedMemes = JSON.parse(localStorage.getItem("memes")) || [];
 
 for (let i = 0; i < savedMemes.length; i++) {
-    createBoxMeme(memesNumber, savedMemes[i].image, savedMemes[i].textT, savedMemes[i].textB, savedMemes[i].color);
+    createBoxMeme(savedMemes[i].id, savedMemes[i].image, savedMemes[i].textT, savedMemes[i].textB, savedMemes[i].color);
 }
 
 
